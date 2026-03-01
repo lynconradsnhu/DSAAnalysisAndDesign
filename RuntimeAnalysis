@@ -1,0 +1,9 @@
+Given eight courses with no prerequisites, there will be 80 operations, 10 per course. 
+Given eight courses with eight prerequisites spread amongst them, there will be 112 operations, on average 14 per course,
+1 cost per line. This puts the growth rate at 10 * N + (4 * P), simplified to O(N+P).
+
+There isn’t a significant runtime difference between any of the available structures, other than the worse case for the binary tree structure. 
+The binary tree structure has a faster search and access runtime than the linked list structure, and the hash table is faster than the binary tree structure,
+according to the Big O cheat sheet provided in an earlier module. (Know thy complexities!). 
+Given the requirements of the project and the code complexity of each structure, with the binary tree being the most complex and the linked list the least, 
+the client might consider using a hash table for their project. 
